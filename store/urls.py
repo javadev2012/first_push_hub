@@ -25,5 +25,7 @@ urlpatterns = [
     path('product/update/<int:pk>/', ProductApiUpdateApiView.as_view(), name='product-update'),
 
     # Aralash update/delete/view (optional)
-    path('product/mixedupdate/<int:pk>/', ProductApiMixedApiView.as_view(), name='product-mixed'),
+    # path('product/mixed /<int:pk>/', ProductApiMixedApiView.as_view(), name='product-mixed'),
+    path('product/mixed/<int:pk>/', ProductApiMixedApiView.as_view(), name='product-mixed'),
+
 ]
